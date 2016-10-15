@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <style>
+        #pyramid {
+            line-height: 0;
+            font-size: 30px;
+        }
+
+        body {
+            font-family: "Courier New", monospace;
+            text-align: center;
+        }
+
+        .invalid-field {
+            border: 1px solid red;
+        }
+
+        .error-message {
+            color: red;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>It's the Pyramid Slide...</h1>
+
+    
+    <form id="draw-form">
+        <label>
+            How high?
+            <input type="range" id="slider" min="1" max="20"/>
+            <span id="slider-value"></span>
+            
+        </label>
+        <br><br>
+       
+    </form>
+
+    <br><br>
+
+    <div id="pyramid"></div>
+
+    <script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="slide.js"></script>
+</body>
+</html>
